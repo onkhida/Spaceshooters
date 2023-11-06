@@ -12,7 +12,7 @@ width = 1000
 height = 600
 
 screen = pygame.display.set_mode((width,height))
-myimg = pygame.image.load("alien101.png")
+myimg = pygame.image.load("assets/alien101.png")
 pygame.display.set_icon(myimg)
 
 def text_objects(text, font):
@@ -49,20 +49,20 @@ pygame.display.set_caption("SpaceShooters")
 
 clock = pygame.time.Clock()
 
-img = pygame.image.load("player.png")
+img = pygame.image.load("assets/player.png")
 img = pygame.transform.scale(img, (80,80))
 
-img2 = pygame.image.load("player2.png")
+img2 = pygame.image.load("assets/player2.png")
 img2 = pygame.transform.scale(img2, (80,80))
 
-background = pygame.image.load("background.png")
+background = pygame.image.load("assets/background.png")
 background = pygame.transform.scale(background, (width,height))
 
 # loading the bullet
-bulletImg = pygame.image.load("defaultbullet.png")
+bulletImg = pygame.image.load("assets/defaultbullet.png")
 bulletImg_trans = pygame.transform.scale(bulletImg, (10,30))
 
-bulletImg2 = pygame.image.load("defaultbullet2.png")
+bulletImg2 = pygame.image.load("assets/defaultbullet2.png")
 bulletImg_trans2 = pygame.transform.scale(bulletImg2, (10,30))
 
 # i need some bullet picker for power-up mechanism
@@ -300,7 +300,7 @@ def main():
         objx = int(x_list[len(x_list) - 1]) + 35
         objx2 = int(x_list2[len(x_list2) - 1]) + 35
 
-        img = pygame.image.load("player.png")
+        img = pygame.image.load("assets/player.png")
         img = pygame.transform.scale(img, (80,80))
 
         screen.fill([255,255,255])
